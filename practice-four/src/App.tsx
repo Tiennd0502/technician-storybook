@@ -1,11 +1,5 @@
-import { ChakraProvider, CSSReset } from '@chakra-ui/react';
+import { ChakraProvider } from '@/providers';
 
-const App = () => {
-  return (
-    <ChakraProvider>
-      <CSSReset />
-    </ChakraProvider>
-  );
-};
+const App = () => <ChakraProvider></ChakraProvider>;
 
 export default App;
