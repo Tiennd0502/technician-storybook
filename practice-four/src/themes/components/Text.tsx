@@ -9,14 +9,14 @@ export const Text = defineStyleConfig({
     textXs: {
       fontSize: 'xs',
     },
-    textXsExtra: {
-      fontSize: 'sxExtra',
+    textXxs: {
+      fontSize: 'xxs',
     },
     textSm: {
       fontSize: 'sm',
     },
-    textSmExtra: {
-      fontSize: 'smExtra',
+    textXsm: {
+      fontSize: 'xsm',
     },
     textMd: {
       fontSize: 'md',

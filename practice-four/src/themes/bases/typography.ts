@@ -7,9 +7,9 @@ export const fonts = {
 
 export const fontSizes: ThemeOverride['fontSizes'] = {
   xs: '12px',
-  sxExtra: '13px',
+  xxs: '13px',
   sm: '14px',
-  smExtra: '15px',
+  xsm: '15px',
   md: '16px',
   lg: '20px',
   xl: '22px',
