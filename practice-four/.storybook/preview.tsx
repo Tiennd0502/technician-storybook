@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import type { Preview } from '@storybook/react';
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider } from '../src/providers';
 
 const preview: Preview = {
   parameters: {
