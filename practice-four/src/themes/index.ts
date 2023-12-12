@@ -1,7 +1,7 @@
 import { extendTheme } from '@chakra-ui/react';
 
-import { radii, colors, fonts, fontSizes, fontWeights } from './bases';
-import { Button, Heading, Text } from './components';
+import { radii, colors, fonts, fontSizes, fontWeights, sizes } from './bases';
+import { Button, Heading, Text, Avatar } from './components';
 
 export const configThemes = {
   ...extendTheme({
@@ -11,6 +11,7 @@ export const configThemes = {
       fontWeights,
       colors,
       radii,
+      sizes,
     },
     styles: {
       global: {
@@ -20,6 +21,7 @@ export const configThemes = {
       },
     },
     components: {
+      Avatar,
       Button,
       Heading,
       Text,
