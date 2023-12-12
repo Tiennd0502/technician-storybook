@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Logo with content 1`] = `
+<div>
+  <div
+    class="css-1owjrhv"
+  >
+    <img
+      alt="Technician"
+      class="chakra-image css-0"
+      src="technician.svg"
+    />
+    <div
+      class="css-0"
+    >
+      <p
+        class="chakra-text css-14ux0f6"
+      >
+        Technician
+      </p>
+      <p
+        class="chakra-text css-1pt2kd5"
+      >
+        At Home
+      </p>
+    </div>
+  </div>
+  ,
+</div>
+`;
