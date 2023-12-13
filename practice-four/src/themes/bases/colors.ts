@@ -38,6 +38,9 @@ export const colors: ThemeOverride['colors'] &
       secondary: {
         default: '#f7fafc',
       },
+      tertiary: {
+        default: 'linear-gradient(90deg, #ffffff26 -97.53%, #4a90e200 100%)',
+      },
     },
   },
 
