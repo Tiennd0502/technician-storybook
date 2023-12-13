@@ -17,7 +17,7 @@ interface ServiceListProps {
 const ServiceList = ({ list }: ServiceListProps) => (
   <Flex gap='5' role='list'>
     {list.map((item) => (
-      <ServiceCard service={item} currencyCharacter={CURRENCY_CHARACTERS.EURO} />
+      <ServiceCard key={item.id} service={item} currencyCharacter={CURRENCY_CHARACTERS.EURO} />
     ))}
   </Flex>
 );
