@@ -6,3 +6,4 @@ export { default as ReportIcon } from './ReportIcon';
 export { default as ServiceIcon } from './ServiceIcon';
 export { default as TechnicianIcon } from './TechnicianIcon';
 export { default as ArrowLeftIcon } from './ArrowLeftIcon';
+export { default as FilterIcon } from './FilterIcon';

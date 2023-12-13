@@ -6,3 +6,4 @@ export { default as Categories } from './Categories';
 export { default as ServiceCard } from './ServiceCard';
 export { default as ServiceList } from './ServiceList';
 export { default as Sidebar } from './Sidebar';
+export { default as Table } from './Table';
