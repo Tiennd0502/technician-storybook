@@ -1,0 +1,289 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductForm component it matches the snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div
+      aria-hidden="true"
+      data-aria-hidden="true"
+    />
+    <div
+      class="chakra-portal"
+    >
+      <div
+        aria-hidden="true"
+        class="chakra-modal__overlay css-13d1tkw"
+        data-aria-hidden="true"
+        style="opacity: 0;"
+      />
+      <div
+        aria-hidden="true"
+        data-aria-hidden="true"
+        data-focus-guard="true"
+        style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+        tabindex="0"
+      />
+      <div
+        data-focus-lock-disabled="false"
+      >
+        <div
+          class="chakra-modal__content-container css-1oxhx2p"
+          tabindex="-1"
+        >
+          <section
+            aria-describedby="chakra-modal--body-:rk:"
+            aria-labelledby="chakra-modal--header-:rk:"
+            aria-modal="true"
+            class="chakra-modal__content css-17pp93c"
+            id="chakra-modal-:rk:"
+            role="dialog"
+            style="opacity: 0; transform: scale(0.95) translateZ(0);"
+            tabindex="-1"
+          >
+            <header
+              class="chakra-modal__header css-72fd9l"
+              id="chakra-modal--header-:rk:"
+            >
+              Add Product
+            </header>
+            <button
+              aria-label="Close"
+              class="chakra-modal__close-btn css-6sdaxy"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="chakra-icon css-onkibi"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M.439,21.44a1.5,1.5,0,0,0,2.122,2.121L11.823,14.3a.25.25,0,0,1,.354,0l9.262,9.263a1.5,1.5,0,1,0,2.122-2.121L14.3,12.177a.25.25,0,0,1,0-.354l9.263-9.262A1.5,1.5,0,0,0,21.439.44L12.177,9.7a.25.25,0,0,1-.354,0L2.561.44A1.5,1.5,0,0,0,.439,2.561L9.7,11.823a.25.25,0,0,1,0,.354Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+            <div
+              class="chakra-modal__body css-0"
+              id="chakra-modal--body-:rk:"
+            >
+              <form
+                class="chakra-stack css-11nd7jy"
+                id="form"
+              >
+                <div
+                  class="chakra-form-control css-0"
+                  role="group"
+                >
+                  <label
+                    class="chakra-form__label css-gu124"
+                    for="field-:rn:"
+                    id="field-:rn:-label"
+                  >
+                    Product Name:
+                  </label>
+                  <input
+                    class="chakra-input css-jgxprw"
+                    id="field-:rn:"
+                    name="name"
+                    placeholder="Product Name"
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <div
+                  class="chakra-form-control css-0"
+                  role="group"
+                >
+                  <label
+                    class="chakra-form__label css-gu124"
+                    for="field-:ro:"
+                    id="field-:ro:-label"
+                  >
+                    Brand Name:
+                  </label>
+                  <input
+                    class="chakra-input css-jgxprw"
+                    id="field-:ro:"
+                    name="brand"
+                    placeholder="Brand Name"
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <div
+                  class="chakra-form-control css-0"
+                  role="group"
+                >
+                  <label
+                    class="chakra-form__label css-gu124"
+                    for="field-:rp:"
+                    id="field-:rp:-label"
+                  >
+                    Service:
+                  </label>
+                  <input
+                    class="chakra-input css-jgxprw"
+                    id="field-:rp:"
+                    name="service"
+                    placeholder="Service"
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <div
+                  class="chakra-form-control css-0"
+                  role="group"
+                >
+                  <label
+                    class="chakra-form__label css-uvho5g"
+                    for="field-:rq:"
+                    id="field-:rq:-label"
+                  >
+                    Status:
+                  </label>
+                  <div
+                    class="chakra-radio-group css-0"
+                    role="radiogroup"
+                  >
+                    <div
+                      class="css-blvggq"
+                    >
+                      <label
+                        class="chakra-radio css-1nqw95c"
+                      >
+                        <input
+                          class="chakra-radio__input"
+                          id="radio-:rs:"
+                          name="status"
+                          style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                          type="radio"
+                          value="1"
+                        />
+                        <span
+                          aria-hidden="true"
+                          class="chakra-radio__control css-ssalds"
+                        />
+                        <span
+                          class="chakra-radio__label css-1y8kf23"
+                        >
+                          Activated
+                        </span>
+                      </label>
+                      <label
+                        class="chakra-radio css-1nqw95c"
+                        data-checked=""
+                      >
+                        <input
+                          checked=""
+                          class="chakra-radio__input"
+                          id="radio-:rt:"
+                          name="status"
+                          style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                          type="radio"
+                          value="0"
+                        />
+                        <span
+                          aria-hidden="true"
+                          class="chakra-radio__control css-ssalds"
+                          data-checked=""
+                        />
+                        <span
+                          class="chakra-radio__label css-1y8kf23"
+                          data-checked=""
+                        >
+                          Deactivated
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div
+              class="chakra-modal__footer css-1ygmb7j"
+            >
+              <button
+                class="chakra-button css-oglbjv"
+                type="button"
+              >
+                Cancel
+              </button>
+              <button
+                class="chakra-button css-117sk0y"
+                form="form"
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        data-aria-hidden="true"
+        data-focus-guard="true"
+        style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+        tabindex="0"
+      />
+    </div>
+  </body>,
+  "container": <div
+    aria-hidden="true"
+    data-aria-hidden="true"
+  />,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

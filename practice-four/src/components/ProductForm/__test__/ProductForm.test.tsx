@@ -18,7 +18,7 @@ describe('ProductForm component', () => {
     fireEvent.click(submit);
 
     await waitFor(() => {
-      const requireMessage = screen.getByText('Product Name is required');
+      const requireMessage = screen.getByText('Product Name is required.');
 
       expect(requireMessage).toBeTruthy();
     });
@@ -40,5 +40,10 @@ describe('ProductForm component', () => {
     });
 
     expect(onSubmit).toHaveBeenCalledTimes(1);
+  });
+
+  it('it matches the snapshot', () => {
+    const dom = render(<ProductForm {...props} />);
+    expect(dom).toMatchSnapshot();
   });
 });
