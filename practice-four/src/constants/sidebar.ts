@@ -4,6 +4,7 @@ import {
   ReportIcon,
   TechnicianIcon,
   FeedbackIcon,
+  SettingIcon,
 } from '@/assets/icons';
 
 export const MENU_ITEM_LIST = [
@@ -42,5 +43,11 @@ export const MENU_ITEM_LIST = [
     leftIcon: HistoryIcon,
     label: 'History',
     href: '/history',
+  },
+  {
+    id: '7',
+    leftIcon: SettingIcon,
+    label: 'Settings',
+    href: '/settings',
   },
 ];
