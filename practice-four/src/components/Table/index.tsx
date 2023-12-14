@@ -12,15 +12,23 @@ interface TableProps {
   title: string;
   columns: TableHeader[];
   data: TableData[];
+  onAdd?: () => void;
+  onEdit?: (id: string) => void;
+  onDelete?: (id: string) => void;
 }
 
-const Table = ({ title, columns, data }: TableProps) => (
+const Table = ({ title, columns, data, onAdd, onEdit, onDelete }: TableProps) => (
   <Box p='7' borderWidth='1px' borderRadius='md' borderColor='primary'>
     <Flex justifyContent='space-between' mb='7' alignItems='center'>
       <Heading variant='headingLg'>{title}</Heading>
-      <Button as={Flex} gap='4' variant='outline'>
+      <Button as={Flex} gap='4' variant='outline' ml='auto' mr='0'>
         Filter <FilterIcon />
       </Button>
+      {onAdd && (
+        <Button ml='4' onClick={onAdd}>
+          Add new{' '}
+        </Button>
+      )}
     </Flex>
     <Flex gap='1' flexDirection='column'>
       <Flex bg='background.section.primary' borderRadius='md' h='50px' w='100%'>
@@ -52,12 +60,25 @@ const Table = ({ title, columns, data }: TableProps) => (
             <Checkbox size='lg' isDisabled />
           </Box>
           <Flex w='100%'>
-            {columns.map(({ key, width }) => (
-              <Box w={width}>
-                <Text key={key} variant='textSm'>
-                  {item[key]}
-                </Text>
-              </Box>
+            {columns.map(({ key, width, isAction }) => (
+              <Flex w={width} key={key} alignItems='center'>
+                {isAction ? (
+                  <>
+                    {onEdit && (
+                      <Button px='2' onClick={() => onEdit(item.id)}>
+                        Edit{' '}
+                      </Button>
+                    )}
+                    {onDelete && (
+                      <Button variant='outline' ml='4' px='2' onClick={() => onDelete(item.id)}>
+                        Delete
+                      </Button>
+                    )}
+                  </>
+                ) : (
+                  <Text variant='textSm'>{item[key]}</Text>
+                )}
+              </Flex>
             ))}
           </Flex>
         </Flex>
