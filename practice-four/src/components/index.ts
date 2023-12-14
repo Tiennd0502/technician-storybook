@@ -11,4 +11,5 @@ export { default as Technician } from './Technician';
 export { default as ProductStatistics } from './ProductStatistics';
 export { default as ErrorBoundary } from './ErrorBoundary';
 export { default as Layout } from './Layout';
-export { default as Input } from './Layout';
+export { default as Input } from './Input';
+export { default as ProductForm } from './ProductForm';
