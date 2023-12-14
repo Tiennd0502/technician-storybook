@@ -20,7 +20,6 @@ const Sidebar = ({ listItem }: SidebarPros) => (
     bg='url(/public/bg-sidebar.svg) no-repeat'
     width='250px'
     height='100vh'
-    objectFit='cover'
   >
     <Box m='5'>
       <Logo />

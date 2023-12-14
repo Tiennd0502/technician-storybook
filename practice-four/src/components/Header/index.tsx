@@ -22,7 +22,7 @@ const Header = (props: HeaderProps) => {
   } = props;
 
   return (
-    <Flex alignItems='center' justifyContent='space-between' p={4} h={{ base: '45px', md: '60px' }}>
+    <Flex alignItems='center' justifyContent='space-between' p={4} h={{ base: '60px', md: '80px' }}>
       <Heading as='h1' variant='heading2Xl'>
         {title}
       </Heading>
