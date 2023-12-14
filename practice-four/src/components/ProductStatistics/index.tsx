@@ -1,8 +1,17 @@
-import { Flex, Box, Heading, Image, Text, Button } from '@chakra-ui/react';
+import { Flex, Heading, Image, Text, Button } from '@chakra-ui/react';
 import { CircleIcon } from '@/assets/icons';
 
 const ProductStatistics = () => (
-  <Box w='fit-content' borderRadius='md' p='7' borderWidth='1px' borderColor='border.primary'>
+  <Flex
+    flexDirection='column'
+    justifyContent='space-between'
+    w='fit-content'
+    borderRadius='md'
+    p='7'
+    borderWidth='1px'
+    borderColor='border.primary'
+    h='100%'
+  >
     <Flex justifyContent='space-between' alignItems='center'>
       <Heading as='h3' variant='headingXl'>
         Total Products
@@ -20,7 +29,7 @@ const ProductStatistics = () => (
         Deactivated
       </Button>
     </Flex>
-  </Box>
+  </Flex>
 );
 
 export default ProductStatistics;
