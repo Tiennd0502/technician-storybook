@@ -5,7 +5,6 @@ const ProductStatistics = () => (
   <Flex
     flexDirection='column'
     justifyContent='space-between'
-    w='fit-content'
     borderRadius='md'
     p='7'
     borderWidth='1px'

@@ -8,3 +8,4 @@ export { default as TechnicianIcon } from './TechnicianIcon';
 export { default as ArrowLeftIcon } from './ArrowLeftIcon';
 export { default as FilterIcon } from './FilterIcon';
 export { default as CircleIcon } from './CircleIcon';
+export { default as SettingIcon } from './SettingIcon';

@@ -10,3 +10,4 @@ export { default as Table } from './Table';
 export { default as Technician } from './Technician';
 export { default as ProductStatistics } from './ProductStatistics';
 export { default as ErrorBoundary } from './ErrorBoundary';
+export { default as Layout } from './Layout';
