@@ -41,6 +41,9 @@ export const colors: ThemeOverride['colors'] &
       tertiary: {
         default: 'linear-gradient(90deg, #ffffff26 -97.53%, #4a90e200 100%)',
       },
+      quaternary: {
+        default: 'linear-gradient(212deg, #6a5fdd 12.24%, #241d8c 117.57%)',
+      },
     },
   },
 

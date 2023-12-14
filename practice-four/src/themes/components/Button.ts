@@ -1,6 +1,10 @@
 import { defineStyleConfig } from '@chakra-ui/react';
 
 export const Button = defineStyleConfig({
+  baseStyle: {
+    py: 3,
+    fontSize: 'sm',
+  },
   variants: {
     solid: {
       color: 'white',
@@ -8,6 +12,9 @@ export const Button = defineStyleConfig({
       _hover: {
         backgroundColor: 'primary.600',
       },
+    },
+    outline: {
+      borderColor: 'border.secondary',
     },
   },
   defaultProps: {
