@@ -14,7 +14,7 @@ interface SidebarPros {
 }
 
 const Sidebar = ({ listItem }: SidebarPros) => (
-  <Flex flexDirection='column' pos='relative' width='250px' height='100vh'>
+  <Flex flexDirection='column' pos='fixed' width='250px' height='100vh'>
     <Box
       zIndex='-1'
       position='absolute'
