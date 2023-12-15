@@ -7,6 +7,7 @@ import { PRODUCT_HEADER_COLUMNS } from '@/constants';
 const meta: Meta<typeof Table> = {
   title: 'Components/Table',
   component: Table,
+  tags: ['autodocs'],
 };
 
 export default meta;

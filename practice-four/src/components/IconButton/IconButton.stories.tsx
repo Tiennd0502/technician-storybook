@@ -6,6 +6,7 @@ import IconButton from '.';
 const meta: Meta<typeof IconButton> = {
   title: 'Components/IconButton',
   component: IconButton,
+  tags: ['autodocs'],
 };
 
 export default meta;

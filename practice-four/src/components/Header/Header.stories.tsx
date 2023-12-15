@@ -6,6 +6,7 @@ import emptyAvatar from '@/assets/images/empty-avatar.svg';
 const meta: Meta<typeof Header> = {
   title: 'Components/Header',
   component: Header,
+  tags: ['autodocs'],
 };
 
 export default meta;

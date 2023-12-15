@@ -7,6 +7,7 @@ import Categories from '.';
 const meta: Meta<typeof Categories> = {
   title: 'Components/Categories',
   component: Categories,
+  tags: ['autodocs'],
 };
 
 export default meta;
