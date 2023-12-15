@@ -60,9 +60,11 @@ const Table = ({ title, columns, data, onAdd, onEdit, onDelete }: TableProps) =>
             <Checkbox size='lg' isDisabled />
           </Box>
           <Flex w='100%'>
-            {columns.map(({ key, width, isAction }) => (
+            {columns.map(({ key, width, isAction, customView }) => (
               <Flex w={width} key={key} alignItems='center'>
-                {isAction ? (
+                {customView ? (
+                  customView(item[key])
+                ) : isAction ? (
                   <>
                     {onEdit && (
                       <Button px='2' onClick={() => onEdit(item.id)}>

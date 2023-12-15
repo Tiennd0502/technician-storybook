@@ -1,12 +1,11 @@
-import { useCallback, useState } from 'react';
-import { Flex, Box, Heading, useDisclosure } from '@chakra-ui/react';
+import { useCallback, useMemo, useState } from 'react';
+import { Flex, Box, Heading, Text, useDisclosure } from '@chakra-ui/react';
 
 // Constants
 import { SERVICES, CATEGORIES, PRODUCTS } from '@/__mocks__';
-import { PRODUCT_HEADER_COLUMNS } from '@/constants';
 
 // Types
-import { Product } from '@/interfaces';
+import { Product, STATUS, TableData } from '@/interfaces';
 
 // Components
 import {
@@ -20,6 +19,7 @@ import {
 
 // Hooks
 import { useFetchProducts } from '@/hooks';
+import { CircleIcon } from '@/assets/icons';
 
 const Home = () => {
   const [productEdit, setProductEdit] = useState<Product>();
@@ -38,6 +38,52 @@ const Home = () => {
   );
 
   const handleClickDeleteProduct = useCallback(() => {}, []);
+
+  const productHeaderColumn = useMemo(() => {
+    const customViewStatus = (value: string | number | boolean) =>
+      value.toString() === STATUS.Activated.toString() ? (
+        <Flex alignItems='center'>
+          <CircleIcon color='background.component.quaternary' mr='1' />
+          <Text variant='textSm'>Activated</Text>
+        </Flex>
+      ) : (
+        <Flex alignItems='center'>
+          <CircleIcon color='secondary.500' mr='1' />
+          <Text variant='textSm'>Deactivated</Text>
+        </Flex>
+      );
+
+    return [
+      {
+        key: 'name',
+        label: 'Product name',
+        width: '30%',
+        onSort: () => null,
+      },
+      {
+        key: 'brand',
+        label: 'Brand name',
+        width: '25%',
+      },
+      {
+        key: 'service',
+        label: 'Service',
+        width: '15%',
+      },
+      {
+        key: 'status',
+        label: 'Status',
+        width: '15%',
+        customView: customViewStatus,
+      },
+      {
+        key: 'actions',
+        label: 'Actions',
+        width: '15%',
+        isAction: true,
+      },
+    ];
+  }, []);
 
   return (
     <Box pr='5'>
@@ -72,8 +118,8 @@ const Home = () => {
         <Box w='67%'>
           <Table
             title='Products listing'
-            columns={PRODUCT_HEADER_COLUMNS}
-            data={data || []}
+            columns={productHeaderColumn}
+            data={(data || []) as unknown as TableData[]}
             onAdd={onOpenForm}
             onEdit={handleClickEditProduct}
             onDelete={handleClickDeleteProduct}
