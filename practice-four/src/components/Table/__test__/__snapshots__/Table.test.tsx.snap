@@ -50,115 +50,111 @@ exports[`Table test cases should render correctly 1`] = `
     >
       <div
         class="css-17i2wn"
+        role="list"
       >
         <div
-          class="css-kgitkj"
+          class="css-c8uo9c"
         />
         <div
-          class="css-hboir5"
-          role="list"
+          class="css-16f0jog"
         >
-          <div
-            class="css-cjicb6"
+          <p
+            class="chakra-text css-0"
           >
-            <p
-              class="chakra-text css-0"
-            >
-              Product name
-            </p>
-            <div
-              class="css-j7qwjs"
-            >
-              <svg
-                class="chakra-icon css-weiglo"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12.8,5.4c-0.377-0.504-1.223-0.504-1.6,0l-9,12c-0.228,0.303-0.264,0.708-0.095,1.047 C2.275,18.786,2.621,19,3,19h18c0.379,0,0.725-0.214,0.895-0.553c0.169-0.339,0.133-0.744-0.095-1.047L12.8,5.4z"
-                  fill="currentColor"
-                />
-              </svg>
-              <svg
-                class="chakra-icon css-weiglo"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M21,5H3C2.621,5,2.275,5.214,2.105,5.553C1.937,5.892,1.973,6.297,2.2,6.6l9,12 c0.188,0.252,0.485,0.4,0.8,0.4s0.611-0.148,0.8-0.4l9-12c0.228-0.303,0.264-0.708,0.095-1.047C21.725,5.214,21.379,5,21,5z"
-                  fill="currentColor"
-                />
-              </svg>
-            </div>
-          </div>
+            Product name
+          </p>
           <div
-            class="css-1489i05"
+            class="css-j7qwjs"
           >
-            <p
-              class="chakra-text css-0"
+            <svg
+              class="chakra-icon css-weiglo"
+              focusable="false"
+              viewBox="0 0 24 24"
             >
-              Brand name
-            </p>
+              <path
+                d="M12.8,5.4c-0.377-0.504-1.223-0.504-1.6,0l-9,12c-0.228,0.303-0.264,0.708-0.095,1.047 C2.275,18.786,2.621,19,3,19h18c0.379,0,0.725-0.214,0.895-0.553c0.169-0.339,0.133-0.744-0.095-1.047L12.8,5.4z"
+                fill="currentColor"
+              />
+            </svg>
+            <svg
+              class="chakra-icon css-weiglo"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M21,5H3C2.621,5,2.275,5.214,2.105,5.553C1.937,5.892,1.973,6.297,2.2,6.6l9,12 c0.188,0.252,0.485,0.4,0.8,0.4s0.611-0.148,0.8-0.4l9-12c0.228-0.303,0.264-0.708,0.095-1.047C21.725,5.214,21.379,5,21,5z"
+                fill="currentColor"
+              />
+            </svg>
           </div>
-          <div
-            class="css-7zdpj7"
+        </div>
+        <div
+          class="css-ty3ry7"
+        >
+          <p
+            class="chakra-text css-0"
           >
-            <p
-              class="chakra-text css-0"
-            >
-              Service
-            </p>
-          </div>
-          <div
-            class="css-7zdpj7"
+            Brand name
+          </p>
+        </div>
+        <div
+          class="css-p3ab7x"
+        >
+          <p
+            class="chakra-text css-0"
           >
-            <p
-              class="chakra-text css-0"
-            >
-              Status
-            </p>
-          </div>
-          <div
-            class="css-7zdpj7"
+            Service
+          </p>
+        </div>
+        <div
+          class="css-1kj85ga"
+        >
+          <p
+            class="chakra-text css-0"
           >
-            <p
-              class="chakra-text css-0"
-            >
-              Actions
-            </p>
-          </div>
+            Status
+          </p>
+        </div>
+        <div
+          class="css-1n3sooa"
+        >
+          <p
+            class="chakra-text css-0"
+          >
+            Actions
+          </p>
         </div>
       </div>
       <div
-        class="css-1iiokdk"
+        class="css-zfiscw"
       >
         <div
-          class="css-1b5wgq4"
-        >
-          <label
-            class="chakra-checkbox css-1elxtiq"
-            data-disabled=""
-          >
-            <input
-              aria-disabled="true"
-              class="chakra-checkbox__input"
-              disabled=""
-              style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
-              type="checkbox"
-              value=""
-            />
-            <span
-              aria-hidden="true"
-              class="chakra-checkbox__control css-dnty2r"
-              data-disabled=""
-            />
-          </label>
-        </div>
-        <div
-          class="css-hboir5"
+          class="css-kzcie9"
         >
           <div
-            class="css-1amdif3"
+            class="css-13f3c3a"
+          >
+            <label
+              class="chakra-checkbox css-1elxtiq"
+              data-disabled=""
+            >
+              <input
+                aria-disabled="true"
+                class="chakra-checkbox__input"
+                disabled=""
+                style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                type="checkbox"
+                value=""
+              />
+              <span
+                aria-hidden="true"
+                class="chakra-checkbox__control css-dnty2r"
+                data-disabled=""
+              />
+            </label>
+          </div>
+          <div
+            class="css-lsigov"
           >
             <p
               class="chakra-text css-0"
@@ -167,7 +163,7 @@ exports[`Table test cases should render correctly 1`] = `
             </p>
           </div>
           <div
-            class="css-3ph3fq"
+            class="css-dq1g6v"
           >
             <p
               class="chakra-text css-0"
@@ -176,7 +172,7 @@ exports[`Table test cases should render correctly 1`] = `
             </p>
           </div>
           <div
-            class="css-1p8hm67"
+            class="css-1gyiejn"
           >
             <p
               class="chakra-text css-0"
@@ -185,49 +181,57 @@ exports[`Table test cases should render correctly 1`] = `
             </p>
           </div>
           <div
-            class="css-1p8hm67"
+            class="css-ug13tv"
           >
-            <p
-              class="chakra-text css-0"
+            <div
+              class="css-70qvj9"
             >
-              1
-            </p>
+              <div
+                class="chakra-icon css-17eg008"
+                focusable="false"
+              />
+              <p
+                class="chakra-text css-0"
+              >
+                Activated
+              </p>
+            </div>
           </div>
           <div
-            class="css-1p8hm67"
+            class="css-1e474gu"
           />
         </div>
       </div>
       <div
-        class="css-1iiokdk"
+        class="css-zfiscw"
       >
         <div
-          class="css-1b5wgq4"
-        >
-          <label
-            class="chakra-checkbox css-1elxtiq"
-            data-disabled=""
-          >
-            <input
-              aria-disabled="true"
-              class="chakra-checkbox__input"
-              disabled=""
-              style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
-              type="checkbox"
-              value=""
-            />
-            <span
-              aria-hidden="true"
-              class="chakra-checkbox__control css-dnty2r"
-              data-disabled=""
-            />
-          </label>
-        </div>
-        <div
-          class="css-hboir5"
+          class="css-kzcie9"
         >
           <div
-            class="css-1amdif3"
+            class="css-13f3c3a"
+          >
+            <label
+              class="chakra-checkbox css-1elxtiq"
+              data-disabled=""
+            >
+              <input
+                aria-disabled="true"
+                class="chakra-checkbox__input"
+                disabled=""
+                style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                type="checkbox"
+                value=""
+              />
+              <span
+                aria-hidden="true"
+                class="chakra-checkbox__control css-dnty2r"
+                data-disabled=""
+              />
+            </label>
+          </div>
+          <div
+            class="css-lsigov"
           >
             <p
               class="chakra-text css-0"
@@ -236,7 +240,7 @@ exports[`Table test cases should render correctly 1`] = `
             </p>
           </div>
           <div
-            class="css-3ph3fq"
+            class="css-dq1g6v"
           >
             <p
               class="chakra-text css-0"
@@ -245,7 +249,7 @@ exports[`Table test cases should render correctly 1`] = `
             </p>
           </div>
           <div
-            class="css-1p8hm67"
+            class="css-1gyiejn"
           >
             <p
               class="chakra-text css-0"
@@ -254,49 +258,57 @@ exports[`Table test cases should render correctly 1`] = `
             </p>
           </div>
           <div
-            class="css-1p8hm67"
+            class="css-ug13tv"
           >
-            <p
-              class="chakra-text css-0"
+            <div
+              class="css-70qvj9"
             >
-              0
-            </p>
+              <div
+                class="chakra-icon css-1kgxeio"
+                focusable="false"
+              />
+              <p
+                class="chakra-text css-0"
+              >
+                Deactivated
+              </p>
+            </div>
           </div>
           <div
-            class="css-1p8hm67"
+            class="css-1e474gu"
           />
         </div>
       </div>
       <div
-        class="css-1iiokdk"
+        class="css-zfiscw"
       >
         <div
-          class="css-1b5wgq4"
-        >
-          <label
-            class="chakra-checkbox css-1elxtiq"
-            data-disabled=""
-          >
-            <input
-              aria-disabled="true"
-              class="chakra-checkbox__input"
-              disabled=""
-              style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
-              type="checkbox"
-              value=""
-            />
-            <span
-              aria-hidden="true"
-              class="chakra-checkbox__control css-dnty2r"
-              data-disabled=""
-            />
-          </label>
-        </div>
-        <div
-          class="css-hboir5"
+          class="css-kzcie9"
         >
           <div
-            class="css-1amdif3"
+            class="css-13f3c3a"
+          >
+            <label
+              class="chakra-checkbox css-1elxtiq"
+              data-disabled=""
+            >
+              <input
+                aria-disabled="true"
+                class="chakra-checkbox__input"
+                disabled=""
+                style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                type="checkbox"
+                value=""
+              />
+              <span
+                aria-hidden="true"
+                class="chakra-checkbox__control css-dnty2r"
+                data-disabled=""
+              />
+            </label>
+          </div>
+          <div
+            class="css-lsigov"
           >
             <p
               class="chakra-text css-0"
@@ -305,7 +317,7 @@ exports[`Table test cases should render correctly 1`] = `
             </p>
           </div>
           <div
-            class="css-3ph3fq"
+            class="css-dq1g6v"
           >
             <p
               class="chakra-text css-0"
@@ -314,7 +326,7 @@ exports[`Table test cases should render correctly 1`] = `
             </p>
           </div>
           <div
-            class="css-1p8hm67"
+            class="css-1gyiejn"
           >
             <p
               class="chakra-text css-0"
@@ -323,49 +335,57 @@ exports[`Table test cases should render correctly 1`] = `
             </p>
           </div>
           <div
-            class="css-1p8hm67"
+            class="css-ug13tv"
           >
-            <p
-              class="chakra-text css-0"
+            <div
+              class="css-70qvj9"
             >
-              1
-            </p>
+              <div
+                class="chakra-icon css-17eg008"
+                focusable="false"
+              />
+              <p
+                class="chakra-text css-0"
+              >
+                Activated
+              </p>
+            </div>
           </div>
           <div
-            class="css-1p8hm67"
+            class="css-1e474gu"
           />
         </div>
       </div>
       <div
-        class="css-1iiokdk"
+        class="css-zfiscw"
       >
         <div
-          class="css-1b5wgq4"
-        >
-          <label
-            class="chakra-checkbox css-1elxtiq"
-            data-disabled=""
-          >
-            <input
-              aria-disabled="true"
-              class="chakra-checkbox__input"
-              disabled=""
-              style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
-              type="checkbox"
-              value=""
-            />
-            <span
-              aria-hidden="true"
-              class="chakra-checkbox__control css-dnty2r"
-              data-disabled=""
-            />
-          </label>
-        </div>
-        <div
-          class="css-hboir5"
+          class="css-kzcie9"
         >
           <div
-            class="css-1amdif3"
+            class="css-13f3c3a"
+          >
+            <label
+              class="chakra-checkbox css-1elxtiq"
+              data-disabled=""
+            >
+              <input
+                aria-disabled="true"
+                class="chakra-checkbox__input"
+                disabled=""
+                style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                type="checkbox"
+                value=""
+              />
+              <span
+                aria-hidden="true"
+                class="chakra-checkbox__control css-dnty2r"
+                data-disabled=""
+              />
+            </label>
+          </div>
+          <div
+            class="css-lsigov"
           >
             <p
               class="chakra-text css-0"
@@ -374,7 +394,7 @@ exports[`Table test cases should render correctly 1`] = `
             </p>
           </div>
           <div
-            class="css-3ph3fq"
+            class="css-dq1g6v"
           >
             <p
               class="chakra-text css-0"
@@ -383,7 +403,7 @@ exports[`Table test cases should render correctly 1`] = `
             </p>
           </div>
           <div
-            class="css-1p8hm67"
+            class="css-1gyiejn"
           >
             <p
               class="chakra-text css-0"
@@ -392,16 +412,24 @@ exports[`Table test cases should render correctly 1`] = `
             </p>
           </div>
           <div
-            class="css-1p8hm67"
+            class="css-ug13tv"
           >
-            <p
-              class="chakra-text css-0"
+            <div
+              class="css-70qvj9"
             >
-              1
-            </p>
+              <div
+                class="chakra-icon css-17eg008"
+                focusable="false"
+              />
+              <p
+                class="chakra-text css-0"
+              >
+                Activated
+              </p>
+            </div>
           </div>
           <div
-            class="css-1p8hm67"
+            class="css-1e474gu"
           />
         </div>
       </div>

@@ -1,11 +1,24 @@
 import { render } from '@testing-library/react';
+import * as mediaQueryHooks from '@chakra-ui/react';
 
 import { PRODUCT_HEADER_COLUMNS } from '@/constants';
 import { PRODUCTS } from '@/__mocks__';
 
 import Table from '..';
 
+jest.mock('@chakra-ui/react', () => {
+  const originalModule = jest.requireActual('@chakra-ui/react');
+
+  return {
+    __esModule: true,
+    ...originalModule,
+    useMediaQuery: jest.fn().mockImplementation(() => [true]),
+  };
+});
+
 describe('Table test cases', () => {
+  jest.spyOn(mediaQueryHooks, 'useMediaQuery').mockImplementationOnce(() => [true]);
+
   const props = {
     title: 'Products listing',
     columns: PRODUCT_HEADER_COLUMNS,
