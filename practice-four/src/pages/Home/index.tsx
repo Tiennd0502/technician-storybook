@@ -26,6 +26,7 @@ const Home = () => {
   const { data: products = [] } = useFetchProducts();
   const {
     createProduct: { mutate: createProduct, isPending: isCreating },
+    editProduct: { mutate: editProduct, isPending: isEditing },
   } = useProduct();
 
   const { isOpen: isOpenForm, onOpen: onOpenForm, onClose: onCloseForm } = useDisclosure();
@@ -37,11 +38,13 @@ const Home = () => {
 
   const handleSubmitProduct = useCallback(
     (data: Product) => {
-      createProduct(data, {
+      const mutate = productEdit ? editProduct : createProduct;
+
+      mutate(data, {
         onSettled: handleCloseForm,
       });
     },
-    [createProduct, handleCloseForm],
+    [productEdit, createProduct, editProduct, handleCloseForm],
   );
 
   const handleClickEditProduct = useCallback(
@@ -107,7 +110,7 @@ const Home = () => {
           title={`${productEdit ? 'Edit' : 'Add'} Product`}
           defaultValues={productEdit}
           isOpen={isOpenForm}
-          isSubmitting={isCreating}
+          isSubmitting={isCreating || isEditing}
           onSubmit={handleSubmitProduct}
           onClose={handleCloseForm}
         />
