@@ -17,7 +17,7 @@ import {
 } from '@chakra-ui/react';
 import { Controller, SubmitHandler, useForm } from 'react-hook-form';
 
-import { Product } from '@/interfaces';
+import { Product, STATUS } from '@/interfaces';
 import { PRODUCT_RULES } from '@/constants';
 import { Input } from '@/components';
 
@@ -99,14 +99,15 @@ const ProductForm = ({
               render={({ field: { value, ...field } }) => (
                 <FormControl>
                   <FormLabel>Status:</FormLabel>
-                  <RadioGroup defaultValue='0' {...field}>
+                  <RadioGroup
+                    defaultValue={value?.toString() || STATUS.Deactivated.toString()}
+                    {...field}
+                  >
                     <Flex gap='3'>
-                      <Radio {...field} isChecked={!!value} value='1'>
+                      <Radio {...field} value={STATUS.Activated.toString()}>
                         Activated
                       </Radio>
-                      <Radio isChecked={!!value} value='0'>
-                        Deactivated
-                      </Radio>
+                      <Radio value={STATUS.Deactivated.toString()}>Deactivated</Radio>
                     </Flex>
                   </RadioGroup>
                 </FormControl>

@@ -1,6 +1,6 @@
 export enum STATUS {
-  Activated,
   Deactivated,
+  Activated,
 }
 
 export interface Product {
@@ -10,3 +10,5 @@ export interface Product {
   service: string;
   status: number;
 }
+
+export type ProductParam = Omit<Product, 'id'>;
