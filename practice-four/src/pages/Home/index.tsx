@@ -2,7 +2,7 @@ import { useCallback, useMemo, useState } from 'react';
 import { Flex, Box, Heading, Text, useDisclosure } from '@chakra-ui/react';
 
 // Constants
-import { SERVICES, CATEGORIES, PRODUCTS } from '@/__mocks__';
+import { SERVICES, CATEGORIES } from '@/__mocks__';
 
 // Types
 import { Product, STATUS, TableData } from '@/interfaces';
@@ -18,23 +18,38 @@ import {
 } from '@/components';
 
 // Hooks
-import { useFetchProducts } from '@/hooks';
+import { useFetchProducts, useProduct } from '@/hooks';
 import { CircleIcon } from '@/assets/icons';
 
 const Home = () => {
   const [productEdit, setProductEdit] = useState<Product>();
-  const { data } = useFetchProducts();
+  const { data: products = [] } = useFetchProducts();
+  const {
+    createProduct: { mutate: createProduct, isPending: isCreating },
+  } = useProduct();
 
   const { isOpen: isOpenForm, onOpen: onOpenForm, onClose: onCloseForm } = useDisclosure();
 
-  const handleSubmitProduct = useCallback(() => {}, []);
+  const handleCloseForm = useCallback(() => {
+    productEdit && setProductEdit(undefined);
+    onCloseForm();
+  }, [onCloseForm, productEdit]);
+
+  const handleSubmitProduct = useCallback(
+    (data: Product) => {
+      createProduct(data, {
+        onSettled: handleCloseForm,
+      });
+    },
+    [createProduct, handleCloseForm],
+  );
 
   const handleClickEditProduct = useCallback(
     (id: string) => {
-      setProductEdit(PRODUCTS.find((product) => product.id === id));
+      setProductEdit(products?.find((product) => product.id === id));
       onOpenForm();
     },
-    [onOpenForm],
+    [onOpenForm, products],
   );
 
   const handleClickDeleteProduct = useCallback(() => {}, []);
@@ -89,10 +104,12 @@ const Home = () => {
     <Box pr='5'>
       {isOpenForm && (
         <ProductForm
+          title={`${productEdit ? 'Edit' : 'Add'} Product`}
           defaultValues={productEdit}
           isOpen={isOpenForm}
+          isSubmitting={isCreating}
           onSubmit={handleSubmitProduct}
-          onClose={onCloseForm}
+          onClose={handleCloseForm}
         />
       )}
       <Flex gap='5'>
@@ -119,7 +136,7 @@ const Home = () => {
           <Table
             title='Products listing'
             columns={productHeaderColumn}
-            data={(data || []) as unknown as TableData[]}
+            data={products as unknown as TableData[]}
             onAdd={onOpenForm}
             onEdit={handleClickEditProduct}
             onDelete={handleClickDeleteProduct}
