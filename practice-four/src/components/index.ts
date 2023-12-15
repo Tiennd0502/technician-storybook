@@ -13,3 +13,4 @@ export { default as ErrorBoundary } from './ErrorBoundary';
 export { default as Layout } from './Layout';
 export { default as Input } from './Input';
 export { default as ProductForm } from './ProductForm';
+export { default as ConfirmModal } from './ConfirmModal';

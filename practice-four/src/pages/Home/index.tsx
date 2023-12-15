@@ -15,6 +15,7 @@ import {
   Table,
   ProductForm,
   Technician,
+  ConfirmModal,
 } from '@/components';
 
 // Hooks
@@ -23,18 +24,39 @@ import { CircleIcon } from '@/assets/icons';
 
 const Home = () => {
   const [productEdit, setProductEdit] = useState<Product>();
+  const [productDelete, setProductDelete] = useState<string>('');
+
   const { data: products = [] } = useFetchProducts();
   const {
     createProduct: { mutate: createProduct, isPending: isCreating },
     editProduct: { mutate: editProduct, isPending: isEditing },
+    deleteProduct: { mutate: deleteProduct, isPending: isDeleting },
   } = useProduct();
 
   const { isOpen: isOpenForm, onOpen: onOpenForm, onClose: onCloseForm } = useDisclosure();
+  const {
+    isOpen: isOpenConfirmModal,
+    onOpen: onOpenConfirmModal,
+    onClose: onCloseConfirmModal,
+  } = useDisclosure();
 
   const handleCloseForm = useCallback(() => {
     productEdit && setProductEdit(undefined);
     onCloseForm();
   }, [onCloseForm, productEdit]);
+
+  const handleOpenConfirmModal = useCallback(
+    (id: string) => {
+      setProductDelete(id);
+      onOpenConfirmModal();
+    },
+    [onOpenConfirmModal],
+  );
+
+  const handleCloseConfirmModal = useCallback(() => {
+    setProductDelete('');
+    onCloseConfirmModal();
+  }, [onCloseConfirmModal]);
 
   const handleSubmitProduct = useCallback(
     (data: Product) => {
@@ -55,7 +77,11 @@ const Home = () => {
     [onOpenForm, products],
   );
 
-  const handleClickDeleteProduct = useCallback(() => {}, []);
+  const handleDeleteProduct = useCallback(() => {
+    deleteProduct(productDelete, {
+      onSettled: handleCloseConfirmModal,
+    });
+  }, [deleteProduct, handleCloseConfirmModal, productDelete]);
 
   const productHeaderColumn = useMemo(() => {
     const customViewStatus = (value: string | number | boolean) =>
@@ -115,6 +141,16 @@ const Home = () => {
           onClose={handleCloseForm}
         />
       )}
+      {isOpenConfirmModal && (
+        <ConfirmModal
+          title='Delete Product'
+          description='Are you sure you want to delete this product?'
+          isOpen={isOpenConfirmModal}
+          isSubmitting={isDeleting}
+          onSubmit={handleDeleteProduct}
+          onClose={handleCloseConfirmModal}
+        />
+      )}
       <Flex gap='5'>
         <Flex
           w='67%'
@@ -142,7 +178,7 @@ const Home = () => {
             data={products as unknown as TableData[]}
             onAdd={onOpenForm}
             onEdit={handleClickEditProduct}
-            onDelete={handleClickDeleteProduct}
+            onDelete={handleOpenConfirmModal}
           />
         </Box>
         <Box w='33%'>
