@@ -99,31 +99,55 @@ const Home = () => {
 
     return [
       {
+        key: 'checkbox',
+        label: 'Checkbox',
+        width: {
+          md: '30px',
+          lg: '50px',
+        },
+        isCheckbox: true,
+      },
+      {
         key: 'name',
         label: 'Product name',
-        width: '30%',
+        width: {
+          md: '100%',
+          lg: '28%',
+        },
         onSort: () => null,
       },
       {
         key: 'brand',
         label: 'Brand name',
-        width: '25%',
+        width: {
+          md: '100%',
+          lg: '17%',
+        },
       },
       {
         key: 'service',
         label: 'Service',
-        width: '15%',
+        width: {
+          md: '100%',
+          lg: '15%',
+        },
       },
       {
         key: 'status',
         label: 'Status',
-        width: '15%',
+        width: {
+          md: '100%',
+          lg: '18%',
+        },
         customView: customViewStatus,
       },
       {
         key: 'actions',
         label: 'Actions',
-        width: '15%',
+        width: {
+          md: '100%',
+          lg: 'calc(32% - 35px)',
+        },
         isAction: true,
       },
     ];
@@ -151,9 +175,12 @@ const Home = () => {
           onClose={handleCloseConfirmModal}
         />
       )}
-      <Flex gap='5'>
+      <Flex gap='5' flexWrap='wrap'>
         <Flex
-          w='67%'
+          w={{
+            base: '100%',
+            xl: 'calc(67% - 10px)',
+          }}
           flexDirection='column'
           justifyContent='space-between'
           gap='5'
@@ -161,17 +188,32 @@ const Home = () => {
           borderColor='border.primary'
           borderRadius='md'
           p='7'
+          order={{
+            md: 1,
+            xl: 1,
+          }}
         >
           <Heading>About Services</Heading>
           <ServiceList list={SERVICES} />
           <Categories list={CATEGORIES} />
         </Flex>
-        <Box w='33%'>
+        <Box
+          w={{
+            sm: '100%',
+            md: 'calc(50% - 10px)',
+            xl: 'calc(33% - 10px)',
+          }}
+          order={{ md: 2, xl: 2 }}
+        >
           <ProductStatistics />
         </Box>
-      </Flex>
-      <Flex gap='5' mt='5'>
-        <Box w='67%'>
+        <Box
+          w={{
+            base: '100%',
+            xl: 'calc(67% - 10px)',
+          }}
+          order={{ md: 4, xl: 3 }}
+        >
           <Table
             title='Products listing'
             columns={productHeaderColumn}
@@ -181,7 +223,14 @@ const Home = () => {
             onDelete={handleOpenConfirmModal}
           />
         </Box>
-        <Box w='33%'>
+        <Box
+          w={{
+            base: '100%',
+            md: 'calc(50% - 10px)',
+            xl: 'calc(33% - 10px)',
+          }}
+          order={{ md: 3, xl: 4 }}
+        >
           <Technician />
         </Box>
       </Flex>

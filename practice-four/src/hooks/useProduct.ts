@@ -1,6 +1,6 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 
-import { Product, ProductParam } from '@/interfaces';
+import { Product } from '@/interfaces';
 import { API_ROUTES } from '@/constants';
 import { APIs } from '@/services';
 
@@ -14,7 +14,7 @@ export const useProduct = () => {
   const queryClient = useQueryClient();
 
   const createProduct = useMutation({
-    mutationFn: (payload: ProductParam) =>
+    mutationFn: (payload: Product) =>
       APIs.post(process.env.MOCKAPI_BASE_URL + API_ROUTES.PRODUCT, payload),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['products'] });
@@ -22,7 +22,7 @@ export const useProduct = () => {
   });
 
   const editProduct = useMutation({
-    mutationFn: (payload: ProductParam) =>
+    mutationFn: (payload: Product) =>
       APIs.put(process.env.MOCKAPI_BASE_URL + API_ROUTES.PRODUCT + payload.id, payload),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['products'] });
