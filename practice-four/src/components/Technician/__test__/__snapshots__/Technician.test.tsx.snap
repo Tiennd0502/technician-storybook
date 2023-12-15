@@ -24,7 +24,7 @@ exports[`Technician test cases should render correctly 1`] = `
     <img
       alt="Technicians"
       class="chakra-image css-0"
-      src="public/technician.png"
+      src="technician.png"
     />
   </div>
 </div>
