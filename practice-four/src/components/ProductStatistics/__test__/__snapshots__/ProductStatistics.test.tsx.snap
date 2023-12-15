@@ -22,7 +22,7 @@ exports[`ProductStatistics test cases should render correctly 1`] = `
     <img
       alt="Total product"
       class="chakra-image css-0"
-      src="public/total-product.png"
+      src="total-product.png"
     />
     <div
       class="css-gg4vpm"
