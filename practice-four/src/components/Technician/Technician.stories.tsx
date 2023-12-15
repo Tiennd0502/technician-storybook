@@ -5,6 +5,7 @@ import Technician from '.';
 const meta: Meta<typeof Technician> = {
   title: 'Components/Technician',
   component: Technician,
+  tags: ['autodocs'],
 };
 
 export default meta;

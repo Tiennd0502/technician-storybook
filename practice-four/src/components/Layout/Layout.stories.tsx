@@ -5,6 +5,7 @@ import Layout from '.';
 const meta: Meta<typeof Layout> = {
   title: 'Components/Layout',
   component: Layout,
+  tags: ['autodocs'],
 };
 
 export default meta;

@@ -6,6 +6,7 @@ import emptyAvatar from '@/assets/images/empty-avatar.svg';
 const meta: Meta<typeof UserCard> = {
   title: 'Components/UserCard',
   component: UserCard,
+  tags: ['autodocs'],
 };
 
 export default meta;

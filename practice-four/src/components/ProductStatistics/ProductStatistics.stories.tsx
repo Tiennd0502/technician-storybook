@@ -5,6 +5,7 @@ import ProductStatistics from '.';
 const meta: Meta<typeof ProductStatistics> = {
   title: 'Components/ProductStatistics',
   component: ProductStatistics,
+  tags: ['autodocs'],
 };
 
 export default meta;

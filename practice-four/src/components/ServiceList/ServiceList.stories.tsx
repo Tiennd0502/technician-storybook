@@ -7,6 +7,7 @@ import ServiceList from '.';
 const meta: Meta<typeof ServiceList> = {
   title: 'Components/ServiceList',
   component: ServiceList,
+  tags: ['autodocs'],
 };
 
 export default meta;

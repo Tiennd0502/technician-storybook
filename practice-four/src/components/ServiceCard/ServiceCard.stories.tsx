@@ -8,6 +8,7 @@ import ServiceCard from '.';
 const meta: Meta<typeof ServiceCard> = {
   title: 'Components/ServiceCard',
   component: ServiceCard,
+  tags: ['autodocs'],
 };
 
 export default meta;

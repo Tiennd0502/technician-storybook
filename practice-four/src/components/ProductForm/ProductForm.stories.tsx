@@ -5,6 +5,7 @@ import ProductForm from '.';
 const meta: Meta<typeof ProductForm> = {
   title: 'Components/ProductForm',
   component: ProductForm,
+  tags: ['autodocs'],
 };
 
 export default meta;
