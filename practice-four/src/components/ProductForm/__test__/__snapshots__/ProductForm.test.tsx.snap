@@ -32,18 +32,18 @@ exports[`ProductForm component it matches the snapshot 1`] = `
           tabindex="-1"
         >
           <section
-            aria-describedby="chakra-modal--body-:rk:"
-            aria-labelledby="chakra-modal--header-:rk:"
+            aria-describedby="chakra-modal--body-:ru:"
+            aria-labelledby="chakra-modal--header-:ru:"
             aria-modal="true"
             class="chakra-modal__content css-17pp93c"
-            id="chakra-modal-:rk:"
+            id="chakra-modal-:ru:"
             role="dialog"
             style="opacity: 0; transform: scale(0.95) translateZ(0);"
             tabindex="-1"
           >
             <header
               class="chakra-modal__header css-72fd9l"
-              id="chakra-modal--header-:rk:"
+              id="chakra-modal--header-:ru:"
             >
               Add Product
             </header>
@@ -66,7 +66,7 @@ exports[`ProductForm component it matches the snapshot 1`] = `
             </button>
             <div
               class="chakra-modal__body css-0"
-              id="chakra-modal--body-:rk:"
+              id="chakra-modal--body-:ru:"
             >
               <form
                 class="chakra-stack css-11nd7jy"
@@ -78,14 +78,14 @@ exports[`ProductForm component it matches the snapshot 1`] = `
                 >
                   <label
                     class="chakra-form__label css-gu124"
-                    for="field-:rn:"
-                    id="field-:rn:-label"
+                    for="field-:r11:"
+                    id="field-:r11:-label"
                   >
                     Product Name:
                   </label>
                   <input
-                    class="chakra-input css-jgxprw"
-                    id="field-:rn:"
+                    class="chakra-input css-1cu97os"
+                    id="field-:r11:"
                     name="name"
                     placeholder="Product Name"
                     type="text"
@@ -98,14 +98,14 @@ exports[`ProductForm component it matches the snapshot 1`] = `
                 >
                   <label
                     class="chakra-form__label css-gu124"
-                    for="field-:ro:"
-                    id="field-:ro:-label"
+                    for="field-:r12:"
+                    id="field-:r12:-label"
                   >
                     Brand Name:
                   </label>
                   <input
-                    class="chakra-input css-jgxprw"
-                    id="field-:ro:"
+                    class="chakra-input css-1cu97os"
+                    id="field-:r12:"
                     name="brand"
                     placeholder="Brand Name"
                     type="text"
@@ -118,14 +118,14 @@ exports[`ProductForm component it matches the snapshot 1`] = `
                 >
                   <label
                     class="chakra-form__label css-gu124"
-                    for="field-:rp:"
-                    id="field-:rp:-label"
+                    for="field-:r13:"
+                    id="field-:r13:-label"
                   >
                     Service:
                   </label>
                   <input
-                    class="chakra-input css-jgxprw"
-                    id="field-:rp:"
+                    class="chakra-input css-1cu97os"
+                    id="field-:r13:"
                     name="service"
                     placeholder="Service"
                     type="text"
@@ -138,8 +138,8 @@ exports[`ProductForm component it matches the snapshot 1`] = `
                 >
                   <label
                     class="chakra-form__label css-uvho5g"
-                    for="field-:rq:"
-                    id="field-:rq:-label"
+                    for="field-:r14:"
+                    id="field-:r14:-label"
                   >
                     Status:
                   </label>
@@ -155,7 +155,7 @@ exports[`ProductForm component it matches the snapshot 1`] = `
                       >
                         <input
                           class="chakra-radio__input"
-                          id="radio-:rs:"
+                          id="radio-:r16:"
                           name="status"
                           style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
                           type="radio"
@@ -178,7 +178,7 @@ exports[`ProductForm component it matches the snapshot 1`] = `
                         <input
                           checked=""
                           class="chakra-radio__input"
-                          id="radio-:rt:"
+                          id="radio-:r17:"
                           name="status"
                           style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
                           type="radio"

@@ -13,7 +13,7 @@ interface InputProps extends ChakraInputProps {
 }
 
 const Input = forwardRef<HTMLInputElement, InputProps>(function Component(
-  { type = 'text', error, bg = 'white', label, ...props },
+  { type = 'text', error, label, ...props },
   ref,
 ) {
   return (
@@ -24,7 +24,6 @@ const Input = forwardRef<HTMLInputElement, InputProps>(function Component(
         type={type}
         isInvalid={!!error}
         transition='all .5s ease'
-        bg={bg}
         _focusVisible={{
           outline: 'none',
         }}

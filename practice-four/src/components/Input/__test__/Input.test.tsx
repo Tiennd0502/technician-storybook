@@ -1,7 +1,9 @@
-import { render } from '@testing-library/react';
+import { fireEvent, render } from '@testing-library/react';
 import Input from '..';
 
 describe('Input component', () => {
+  const onChange = jest.fn();
+
   test('should show error message when reive error', () => {
     const props = {
       error: 'Error message',
@@ -21,6 +23,20 @@ describe('Input component', () => {
     const target = getByText('Name');
 
     expect(target).toBeTruthy();
+  });
+
+  it('should call onChange handler when value changes', async () => {
+    const props = {
+      placeholder: 'Name',
+      value: '',
+      onChange,
+    };
+
+    const { getByPlaceholderText } = render(<Input {...props} />);
+    const input = getByPlaceholderText('Name');
+    fireEvent.change(input, { target: { value: 'Product' } });
+
+    expect(onChange).toHaveBeenCalledTimes(1);
   });
 
   test('match snapshot', () => {
