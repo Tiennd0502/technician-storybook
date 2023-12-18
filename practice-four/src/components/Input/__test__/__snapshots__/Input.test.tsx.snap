@@ -10,22 +10,22 @@ exports[`Input component match snapshot 1`] = `
     <label
       class="chakra-form__label css-gu124"
       data-invalid=""
-      for="field-:r2:"
-      id="field-:r2:-label"
+      for="field-:r3:"
+      id="field-:r3:-label"
     >
       Name
     </label>
     <input
-      aria-describedby="field-:r2:-feedback"
+      aria-describedby="field-:r3:-feedback"
       aria-invalid="true"
-      class="chakra-input css-jgxprw"
-      id="field-:r2:"
+      class="chakra-input css-1cu97os"
+      id="field-:r3:"
       type="text"
     />
     <div
       aria-live="polite"
       class="chakra-form__error-message css-70qvj9"
-      id="field-:r2:-feedback"
+      id="field-:r3:-feedback"
     >
       Error message
     </div>
