@@ -1,30 +1,92 @@
-# React + TypeScript + Vite
+# React practice four
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+- This document provides information about React practice four
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech stacks
 
-## Expanding the ESLint configuration
+- React
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React query
 
-- Configure the top-level `parserOptions` property like this:
+- React hook form
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- TypeScript
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Mock API
+
+- Chakra ui
+
+- Storybook
+
+- Jest, React testing library
+
+- Vite
+
+## Timeline
+
+- Estimated time: 4 days (Dec 11 - Sep 14, 2023)
+
+- Actual time: 5 days (Sep 11 - Oct 15, 2023)
+
+## Time size
+
+- 1 dev
+
+## Editor
+
+- [Visual studio code](https://code.visualstudio.com/)
+
+## Targets
+
+- Using [React hooks](https://reactjs.org/docs/hooks-intro.html), optimizing components with memo, useCallback, useMemo.
+
+- Code splitting.
+
+- Apply [Storybook](https://storybook.js.org/).
+
+- Apply [React Query](https://tanstack.com/query/latest/) for fetching data.
+
+- Apply [React Hook Form](https://react-hook-form.com/) for validate form.
+
+- Apply [Jest](https://jestjs.io/) and [React testing library](https://testing-library.com/) for unit testing.
+
+
+## Features
+
+- Users can view products and service page.
+
+- Users can see list product.
+
+- Users can action CRUD product.
+
+- Users can search for products by name.
+
+- Users can sort products by name.
+
+## Requirements
+
+- [Node](https://nodejs.org/en/ "Node") >= 20.0.0 / [pnpm](https://pnpm.io/) >= 8.6.1
+
+- [Vite](https://vitejs.dev/) >=5.0.0
+
+## Getting started
+
+#### Step by step to run this app in your local:
+
+1. `git clone -b feature/practice-four git@gitlab.asoft-python.com:g-tiennguyen/react-training.git`
+
+2. `cd react-training/practice-four`
+
+3. Create a .env similar with .env.example (contact to me to get information of environment variable - Email: tien.nguyen@asnet.com.vn)
+
+3. `pnpm install`
+
+4. Run app: `pnpm dev`
+
+5. Open on web: http://localhost:3000
+
+6. Run storybook: pnpm storybook
+
+7. Open on web: http://localhost:6006
