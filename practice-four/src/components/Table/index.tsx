@@ -5,11 +5,8 @@ import { TriangleDownIcon, TriangleUpIcon } from '@chakra-ui/icons';
 // Types
 import { TableData, TableHeader, SORT_TYPE, Filter } from '@/interfaces';
 
-// Assets
-import { FilterIcon } from '@/assets/icons';
-
 // Components
-import { SearchBox } from '..';
+import { SearchBox, FilterIcon } from '..';
 
 interface TableProps {
   title: string;

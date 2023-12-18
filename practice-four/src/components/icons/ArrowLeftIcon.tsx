@@ -5,7 +5,7 @@ const ArrowLeftIcon = () => (
       d='M17.5826 20.5119C17.5826 20.5119 22.8268 15.2677 23.2445 14.8499C23.6623 14.4322 23.7246 13.8172 23.2445 13.3371C22.7644 12.857 22.1494 12.9194 21.7317 13.3371C21.3139 13.7549 15.3133 19.7555 15.3133 19.7555C14.8956 20.1732 14.8956 20.8506 15.3133 21.2683L21.7317 27.6867C22.1494 28.1044 22.8268 28.1044 23.2445 27.6867C23.6623 27.2689 23.6623 26.5916 23.2445 26.1739L17.5826 20.5119Z'
       fill='#222222'
       stroke='#222222'
-      stroke-width='0.5'
+      strokeWidth='0.5'
     />
     <defs>
       <linearGradient
@@ -16,8 +16,8 @@ const ArrowLeftIcon = () => (
         y2='40'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='#F8D9AF' />
-        <stop offset='1' stop-color='#FBD199' />
+        <stop stopColor='#F8D9AF' />
+        <stop offset='1' stopColor='#FBD199' />
       </linearGradient>
     </defs>
   </svg>

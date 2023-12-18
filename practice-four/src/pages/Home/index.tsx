@@ -17,11 +17,11 @@ import {
   ProductForm,
   Technician,
   ConfirmModal,
+  CircleIcon,
 } from '@/components';
 
 // Hooks
 import { useFetchProducts, useProduct } from '@/hooks';
-import { CircleIcon } from '@/assets/icons';
 
 const Home = () => {
   const [productEdit, setProductEdit] = useState<Product>();

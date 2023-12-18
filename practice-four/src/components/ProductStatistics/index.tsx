@@ -1,5 +1,5 @@
 import { Flex, Heading, Image, Text, Button } from '@chakra-ui/react';
-import { CircleIcon } from '@/assets/icons';
+import { CircleIcon } from '..';
 
 const ProductStatistics = () => (
   <Flex

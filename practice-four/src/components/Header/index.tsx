@@ -1,14 +1,11 @@
 import { memo } from 'react';
 import { Flex, Heading } from '@chakra-ui/react';
 
-// Assets
-import { NotificationIcon } from '@/assets/icons';
-
 // Types
 import { User } from '@/interfaces';
 
 // Components
-import { IconButton, UserCard } from '..';
+import { IconButton, UserCard, NotificationIcon } from '..';
 
 interface HeaderProps {
   title: string;

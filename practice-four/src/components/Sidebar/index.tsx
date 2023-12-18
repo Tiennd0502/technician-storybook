@@ -1,13 +1,10 @@
 import { Box, Flex, List, ListItem, Link, Text } from '@chakra-ui/react';
 
-// Assets
-import { ArrowLeftIcon } from '@/assets/icons';
-
 // Types
 import { Menu } from '@/interfaces';
 
 // Components
-import { Logo } from '..';
+import { Logo, ArrowLeftIcon } from '..';
 
 interface SidebarPros {
   listItem: Menu[];

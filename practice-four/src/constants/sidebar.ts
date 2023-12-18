@@ -5,7 +5,7 @@ import {
   TechnicianIcon,
   FeedbackIcon,
   SettingIcon,
-} from '@/assets/icons';
+} from '@/components';
 
 export const MENU_ITEM_LIST = [
   {
