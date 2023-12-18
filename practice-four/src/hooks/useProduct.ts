@@ -6,7 +6,7 @@ import { APIs } from '@/services';
 
 import { generateQuery } from '@/utils';
 
-export const useFetchProducts = (filter?: Filter) =>
+export const useFetchProducts = (filter: Filter) =>
   useQuery({
     queryKey: ['products', generateQuery(filter)],
     queryFn: () =>
