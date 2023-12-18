@@ -5,7 +5,7 @@ import { Flex, Heading } from '@chakra-ui/react';
 import { User } from '@/interfaces';
 
 // Components
-import { IconButton, UserCard, NotificationIcon } from '..';
+import { IconButton, Dropdown, NotificationIcon } from '..';
 
 interface HeaderProps {
   title: string;
@@ -25,7 +25,7 @@ const Header = (props: HeaderProps) => {
       </Heading>
       <Flex gap='2'>
         <IconButton aria-label='Notifications' icon={<NotificationIcon />} />
-        <UserCard name={name} avatar={avatar} />
+        <Dropdown name={name} avatar={avatar} />
       </Flex>
     </Flex>
   );
