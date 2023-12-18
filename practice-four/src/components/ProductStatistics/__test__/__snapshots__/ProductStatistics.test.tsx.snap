@@ -19,11 +19,15 @@ exports[`ProductStatistics test cases should render correctly 1`] = `
         350
       </p>
     </div>
-    <img
-      alt="Total product"
-      class="chakra-image css-0"
-      src="total-product.png"
-    />
+    <div
+      class="css-1pxgmwj"
+    >
+      <img
+        alt="Total product"
+        class="chakra-image css-1jonlwm"
+        src="total-product.png"
+      />
+    </div>
     <div
       class="css-gg4vpm"
     >
