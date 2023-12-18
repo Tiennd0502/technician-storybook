@@ -1,4 +1,4 @@
-import { CircleIcon } from '@/assets/icons';
+import { CircleIcon } from '@/components';
 import { STATUS } from '@/interfaces';
 import { Flex, Text } from '@chakra-ui/react';
 

@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { NotificationIcon } from '@/assets/icons';
+import { NotificationIcon } from '..';
 
 import IconButton from '.';
 
