@@ -9,12 +9,12 @@ exports[`Table test cases should render correctly 1`] = `
       class="css-de1gzo"
     >
       <h2
-        class="chakra-heading css-0"
+        class="chakra-heading css-1po99kh"
       >
         Products listing
       </h2>
       <div
-        class="chakra-button css-1ypcfr6"
+        class="chakra-button css-k0j37o"
       >
         Filter 
         <svg
@@ -64,10 +64,10 @@ exports[`Table test cases should render correctly 1`] = `
             Product name
           </p>
           <div
-            class="css-j7qwjs"
+            class="css-1gb1rig"
           >
             <svg
-              class="chakra-icon css-weiglo"
+              class="chakra-icon css-11mwvlo"
               focusable="false"
               viewBox="0 0 24 24"
             >

@@ -3,7 +3,7 @@ import { Flex, Box, Heading, Text, useDisclosure } from '@chakra-ui/react';
 
 // Constants
 import { SERVICES, CATEGORIES } from '@/__mocks__';
-
+import { DEFAULT_PRODUCT_FILTER } from '@/constants';
 // Types
 import { Product, STATUS, TableData } from '@/interfaces';
 
@@ -216,6 +216,7 @@ const Home = () => {
         >
           <Table
             title='Products listing'
+            filter={DEFAULT_PRODUCT_FILTER}
             columns={productHeaderColumn}
             data={products as unknown as TableData[]}
             onAdd={onOpenForm}
