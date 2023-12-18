@@ -67,5 +67,8 @@ export const colors: ThemeOverride['colors'] &
     secondary: {
       default: '#2d2d2d',
     },
+    tertiary: {
+      default: '#fff',
+    },
   },
 };

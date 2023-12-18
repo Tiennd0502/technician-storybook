@@ -119,7 +119,7 @@ const ProductForm = ({
           <Button variant='outline' isDisabled={isSubmitting} ml='auto' mr='6' onClick={onClose}>
             Cancel
           </Button>
-          <Button type='submit' form='form' isLoading={isSubmitting} color='white'>
+          <Button type='submit' form='form' isLoading={isSubmitting}>
             Submit
           </Button>
         </ModalFooter>

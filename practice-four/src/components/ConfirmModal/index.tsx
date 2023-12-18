@@ -44,7 +44,7 @@ const ConfirmModal = ({
         <Button variant='outline' isDisabled={isSubmitting} ml='auto' mr='4' onClick={onClose}>
           No
         </Button>
-        <Button onClick={onSubmit} isLoading={isSubmitting} color='white'>
+        <Button onClick={onSubmit} isLoading={isSubmitting}>
           Yes
         </Button>
       </ModalFooter>

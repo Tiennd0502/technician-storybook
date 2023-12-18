@@ -38,11 +38,16 @@ const ServiceCard = ({
     />
     <Flex flexDirection='column' justify-content='flex-end' h='100%'>
       <Spacer />
-      <Text color='white' variant={{ base: 'textXs', md: 'textMd' }} px='2.5' {...TRUNCATE_STYLE}>
+      <Text
+        color='text.tertiary'
+        variant={{ base: 'textXs', md: 'textMd' }}
+        px='2.5'
+        {...TRUNCATE_STYLE}
+      >
         {name}
       </Text>
       <Text
-        color='white'
+        color='text.tertiary'
         variant={{ base: 'textXs', md: 'textMd' }}
         px='2.5'
         mb='3'

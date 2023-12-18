@@ -10,7 +10,7 @@ exports[`Categories test cases should render correctly 1`] = `
       class="chakra-link css-mq8v5c"
     >
       <p
-        class="chakra-text css-ahi56w"
+        class="chakra-text css-1kmnq3w"
       >
         Sofa Cleaning
       </p>
@@ -19,7 +19,7 @@ exports[`Categories test cases should render correctly 1`] = `
       class="chakra-link css-71elz2"
     >
       <p
-        class="chakra-text css-ahi56w"
+        class="chakra-text css-1kmnq3w"
       >
         Bathroom
       </p>
@@ -28,7 +28,7 @@ exports[`Categories test cases should render correctly 1`] = `
       class="chakra-link css-1jgpbug"
     >
       <p
-        class="chakra-text css-ahi56w"
+        class="chakra-text css-1kmnq3w"
       >
         Best Control
       </p>
@@ -37,7 +37,7 @@ exports[`Categories test cases should render correctly 1`] = `
       class="chakra-link css-1katu9w"
     >
       <p
-        class="chakra-text css-ahi56w"
+        class="chakra-text css-1kmnq3w"
       >
         View All
       </p>
