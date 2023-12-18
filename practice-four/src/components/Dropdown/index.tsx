@@ -8,7 +8,7 @@ interface UserCardProps {
   name: string;
 }
 
-const UserCard = ({ name, avatar }: UserCardProps) => (
+const Dropdown = ({ name, avatar }: UserCardProps) => (
   <Menu>
     {({ isOpen }) => (
       <>
@@ -24,7 +24,7 @@ const UserCard = ({ name, avatar }: UserCardProps) => (
             <Text>{name}</Text>
           </Flex>
         </MenuButton>
-        <MenuList>
+        <MenuList data-testid='dropdown-options'>
           <MenuItem>Profile</MenuItem>
           <MenuItem>Change password</MenuItem>
         </MenuList>
@@ -33,4 +33,4 @@ const UserCard = ({ name, avatar }: UserCardProps) => (
   </Menu>
 );
 
-export default memo(UserCard);
+export default memo(Dropdown);

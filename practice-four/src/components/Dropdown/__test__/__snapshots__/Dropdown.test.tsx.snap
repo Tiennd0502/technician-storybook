@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`UserCard test cases should render correctly 1`] = `
+exports[`Dropdown test cases should render correctly 1`] = `
 <div>
   <button
     aria-controls="menu-list-:r1:"
@@ -57,6 +57,7 @@ exports[`UserCard test cases should render correctly 1`] = `
     <div
       aria-orientation="vertical"
       class="chakra-menu__menu-list css-sjt5nk"
+      data-testid="dropdown-options"
       id="menu-list-:r1:"
       role="menu"
       style="transform-origin: var(--popper-transform-origin); opacity: 0; visibility: hidden; transform: scale(0.8) translateZ(0);"
