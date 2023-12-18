@@ -1,36 +1,37 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 
-import { Product } from '@/interfaces';
+import { Product, Filter } from '@/interfaces';
 import { API_ROUTES } from '@/constants';
 import { APIs } from '@/services';
 
-export const useFetchProducts = () =>
+import { generateQuery } from '@/utils';
+
+export const useFetchProducts = (filter?: Filter) =>
   useQuery({
-    queryKey: ['products'],
-    queryFn: () => APIs.get<Product[]>(process.env.MOCKAPI_BASE_URL + API_ROUTES.PRODUCT),
+    queryKey: ['products', generateQuery(filter)],
+    queryFn: () =>
+      APIs.get<Product[]>(`${API_ROUTES.PRODUCT}${filter ? generateQuery(filter) : ''}`),
   });
 
 export const useProduct = () => {
   const queryClient = useQueryClient();
 
   const createProduct = useMutation({
-    mutationFn: (payload: Product) =>
-      APIs.post(process.env.MOCKAPI_BASE_URL + API_ROUTES.PRODUCT, payload),
+    mutationFn: (payload: Product) => APIs.post(API_ROUTES.PRODUCT, payload),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['products'] });
     },
   });
 
   const editProduct = useMutation({
-    mutationFn: (payload: Product) =>
-      APIs.put(process.env.MOCKAPI_BASE_URL + API_ROUTES.PRODUCT + payload.id, payload),
+    mutationFn: (payload: Product) => APIs.put(`${API_ROUTES.PRODUCT}${payload.id}`, payload),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['products'] });
     },
   });
 
   const deleteProduct = useMutation({
-    mutationFn: (id: string) => APIs.delete(process.env.MOCKAPI_BASE_URL + API_ROUTES.PRODUCT + id),
+    mutationFn: (id: string) => APIs.delete(`${API_ROUTES.PRODUCT}${id}`),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['products'] });
     },

@@ -4,8 +4,9 @@ import { Flex, Box, Heading, Text, useDisclosure } from '@chakra-ui/react';
 // Constants
 import { SERVICES, CATEGORIES } from '@/__mocks__';
 import { DEFAULT_PRODUCT_FILTER } from '@/constants';
+
 // Types
-import { Product, STATUS, TableData } from '@/interfaces';
+import { Product, STATUS, TableData, Filter } from '@/interfaces';
 
 // Components
 import {
@@ -25,8 +26,8 @@ import { CircleIcon } from '@/assets/icons';
 const Home = () => {
   const [productEdit, setProductEdit] = useState<Product>();
   const [productDelete, setProductDelete] = useState<string>('');
-
-  const { data: products = [] } = useFetchProducts();
+  const [productFilter, setProductFilter] = useState<Filter>(DEFAULT_PRODUCT_FILTER);
+  const { data: products = [] } = useFetchProducts(productFilter);
   const {
     createProduct: { mutate: createProduct, isPending: isCreating },
     editProduct: { mutate: editProduct, isPending: isEditing },
@@ -83,6 +84,20 @@ const Home = () => {
     });
   }, [deleteProduct, handleCloseConfirmModal, productDelete]);
 
+  const handleSearchProduct = useCallback((value: string) => {
+    setProductFilter((prev: Filter) => ({
+      ...prev,
+      name: value,
+    }));
+  }, []);
+
+  const handleSortProduct = useCallback((value: Filter) => {
+    setProductFilter((prev: Filter) => ({
+      ...prev,
+      ...value,
+    }));
+  }, []);
+
   const productHeaderColumn = useMemo(() => {
     const customViewStatus = (value: string | number | boolean) =>
       value.toString() === STATUS.Activated.toString() ? (
@@ -114,7 +129,7 @@ const Home = () => {
           md: '100%',
           lg: '28%',
         },
-        onSort: () => null,
+        onSort: handleSortProduct,
       },
       {
         key: 'brand',
@@ -216,12 +231,13 @@ const Home = () => {
         >
           <Table
             title='Products listing'
-            filter={DEFAULT_PRODUCT_FILTER}
+            filter={productFilter}
             columns={productHeaderColumn}
             data={products as unknown as TableData[]}
             onAdd={onOpenForm}
             onEdit={handleClickEditProduct}
             onDelete={handleOpenConfirmModal}
+            onSearch={handleSearchProduct}
           />
         </Box>
         <Box
