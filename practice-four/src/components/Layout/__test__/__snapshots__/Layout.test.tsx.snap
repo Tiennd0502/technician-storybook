@@ -92,7 +92,7 @@ exports[`Layout component match snapshot 1`] = `
           >
             <a
               class="chakra-link css-10wiyls"
-              href="/dashboard"
+              href="#"
             >
               <svg
                 fill="none"
@@ -126,7 +126,7 @@ exports[`Layout component match snapshot 1`] = `
           >
             <a
               class="chakra-link css-10wiyls"
-              href="/product-services"
+              href="#"
             >
               <svg
                 fill="none"
@@ -160,7 +160,7 @@ exports[`Layout component match snapshot 1`] = `
           >
             <a
               class="chakra-link css-10wiyls"
-              href="/technicians"
+              href="#"
             >
               <svg
                 fill="none"
@@ -198,7 +198,7 @@ exports[`Layout component match snapshot 1`] = `
           >
             <a
               class="chakra-link css-10wiyls"
-              href="/reports"
+              href="#"
             >
               <svg
                 fill="none"
@@ -293,7 +293,7 @@ exports[`Layout component match snapshot 1`] = `
           >
             <a
               class="chakra-link css-10wiyls"
-              href="/feedbacks"
+              href="#"
             >
               <svg
                 fill="none"
@@ -349,7 +349,7 @@ exports[`Layout component match snapshot 1`] = `
           >
             <a
               class="chakra-link css-10wiyls"
-              href="/history"
+              href="#"
             >
               <svg
                 fill="none"
@@ -431,7 +431,7 @@ exports[`Layout component match snapshot 1`] = `
           >
             <a
               class="chakra-link css-10wiyls"
-              href="/settings"
+              href="#"
             >
               <svg
                 fill="none"
