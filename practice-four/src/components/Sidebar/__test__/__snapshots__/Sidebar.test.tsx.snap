@@ -23,12 +23,12 @@ exports[`Sidebar test cases should render correctly 1`] = `
           class="css-0"
         >
           <p
-            class="chakra-text css-14ux0f6"
+            class="chakra-text css-p3xeyl"
           >
             Technician
           </p>
           <p
-            class="chakra-text css-1pt2kd5"
+            class="chakra-text css-uqf88n"
           >
             At Home
           </p>
@@ -109,7 +109,7 @@ exports[`Sidebar test cases should render correctly 1`] = `
             />
           </svg>
           <p
-            class="chakra-text css-kbn7if"
+            class="chakra-text css-dbvda3"
           >
             Dashboard
           </p>
@@ -143,7 +143,7 @@ exports[`Sidebar test cases should render correctly 1`] = `
             />
           </svg>
           <p
-            class="chakra-text css-kbn7if"
+            class="chakra-text css-dbvda3"
           >
             Product & services
           </p>
@@ -181,7 +181,7 @@ exports[`Sidebar test cases should render correctly 1`] = `
             />
           </svg>
           <p
-            class="chakra-text css-kbn7if"
+            class="chakra-text css-dbvda3"
           >
             Technicians
           </p>
@@ -276,7 +276,7 @@ exports[`Sidebar test cases should render correctly 1`] = `
             />
           </svg>
           <p
-            class="chakra-text css-kbn7if"
+            class="chakra-text css-dbvda3"
           >
             Reports
           </p>
@@ -332,7 +332,7 @@ exports[`Sidebar test cases should render correctly 1`] = `
             />
           </svg>
           <p
-            class="chakra-text css-kbn7if"
+            class="chakra-text css-dbvda3"
           >
             Feedbacks
           </p>
@@ -414,7 +414,7 @@ exports[`Sidebar test cases should render correctly 1`] = `
             />
           </svg>
           <p
-            class="chakra-text css-kbn7if"
+            class="chakra-text css-dbvda3"
           >
             History
           </p>
@@ -456,7 +456,7 @@ exports[`Sidebar test cases should render correctly 1`] = `
             />
           </svg>
           <p
-            class="chakra-text css-kbn7if"
+            class="chakra-text css-dbvda3"
           >
             Settings
           </p>

@@ -18,12 +18,12 @@ exports[`ServiceCard test cases should render correctly 1`] = `
         class="css-17xejub"
       />
       <p
-        class="chakra-text css-10l0zk5"
+        class="chakra-text css-od0eia"
       >
         Carpenter
       </p>
       <p
-        class="chakra-text css-e3csjr"
+        class="chakra-text css-18bew60"
       >
         €45
       </p>

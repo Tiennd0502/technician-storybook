@@ -84,7 +84,7 @@ exports[`ConfirmModal component it matches the snapshot 1`] = `
                 No
               </button>
               <button
-                class="chakra-button css-117sk0y"
+                class="chakra-button css-4xx2wk"
                 type="button"
               >
                 Yes

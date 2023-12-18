@@ -211,7 +211,7 @@ exports[`ProductForm component it matches the snapshot 1`] = `
                 Cancel
               </button>
               <button
-                class="chakra-button css-117sk0y"
+                class="chakra-button css-4xx2wk"
                 form="form"
                 type="submit"
               >

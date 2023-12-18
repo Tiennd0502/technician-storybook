@@ -23,7 +23,7 @@ const Categories = ({ list }: CategoriesProps) => {
       {list.map(({ id, image, label }) => (
         <Link key={id} pos='relative' {...getLinkStyles(image)}>
           <Text
-            color='white'
+            color='text.tertiary'
             variant='textXsm'
             pos='absolute'
             top='50%'

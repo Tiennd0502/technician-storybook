@@ -43,7 +43,7 @@ const Sidebar = ({ listItem }: SidebarPros) => (
           >
             <Flex as={Link} href={href} p='5' gap='2.5' _hover={{ textDecoration: 'none' }}>
               <LeftIcon />
-              <Text color='white'>{label}</Text>
+              <Text color='text.tertiary'>{label}</Text>
             </Flex>
           </ListItem>
         );

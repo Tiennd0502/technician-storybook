@@ -6,7 +6,7 @@ const Logo = () => (
     <Box>
       <Text
         width='fit-content'
-        color='white'
+        color='text.tertiary'
         fontWeight='normal'
         variant='textLg'
         letterSpacing='0.275px'
@@ -17,7 +17,7 @@ const Logo = () => (
         width='fit-content'
         fontWeight='normal'
         variant='textSm'
-        color='white'
+        color='text.tertiary'
         opacity='0.5'
         letterSpacing='0.193px'
       >

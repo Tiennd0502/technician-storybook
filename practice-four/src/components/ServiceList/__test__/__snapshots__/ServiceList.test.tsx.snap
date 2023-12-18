@@ -22,12 +22,12 @@ exports[`ServiceList test cases should render correctly 1`] = `
           class="css-17xejub"
         />
         <p
-          class="chakra-text css-10l0zk5"
+          class="chakra-text css-od0eia"
         >
           Carpenter
         </p>
         <p
-          class="chakra-text css-e3csjr"
+          class="chakra-text css-18bew60"
         >
           €45
         </p>
@@ -49,12 +49,12 @@ exports[`ServiceList test cases should render correctly 1`] = `
           class="css-17xejub"
         />
         <p
-          class="chakra-text css-10l0zk5"
+          class="chakra-text css-od0eia"
         >
           Ac Service & repair
         </p>
         <p
-          class="chakra-text css-e3csjr"
+          class="chakra-text css-18bew60"
         >
           €25
         </p>
@@ -76,12 +76,12 @@ exports[`ServiceList test cases should render correctly 1`] = `
           class="css-17xejub"
         />
         <p
-          class="chakra-text css-10l0zk5"
+          class="chakra-text css-od0eia"
         >
           Kitchecn Deep Cleaning
         </p>
         <p
-          class="chakra-text css-e3csjr"
+          class="chakra-text css-18bew60"
         >
           €30
         </p>
@@ -103,12 +103,12 @@ exports[`ServiceList test cases should render correctly 1`] = `
           class="css-17xejub"
         />
         <p
-          class="chakra-text css-10l0zk5"
+          class="chakra-text css-od0eia"
         >
           Electrician
         </p>
         <p
-          class="chakra-text css-e3csjr"
+          class="chakra-text css-18bew60"
         >
           €50
         </p>
