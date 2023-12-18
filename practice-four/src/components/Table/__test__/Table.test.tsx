@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import * as mediaQueryHooks from '@chakra-ui/react';
 
-import { PRODUCT_HEADER_COLUMNS } from '@/constants';
+import { PRODUCT_HEADER_COLUMNS, DEFAULT_PRODUCT_FILTER } from '@/constants';
 import { PRODUCTS } from '@/__mocks__';
 
 import Table from '..';
@@ -21,6 +21,7 @@ describe('Table test cases', () => {
 
   const props = {
     title: 'Products listing',
+    filter: DEFAULT_PRODUCT_FILTER,
     columns: PRODUCT_HEADER_COLUMNS,
     data: PRODUCTS,
   };
@@ -38,7 +39,9 @@ describe('Table test cases', () => {
   });
 
   test('Should render empty header elements', () => {
-    const { getByRole } = render(<Table data={[]} columns={[]} title='Products listing' />);
+    const { getByRole } = render(
+      <Table data={[]} columns={[]} filter={DEFAULT_PRODUCT_FILTER} title='Products listing' />,
+    );
     const header = getByRole('list');
 
     expect(header.childNodes).toHaveLength(0);

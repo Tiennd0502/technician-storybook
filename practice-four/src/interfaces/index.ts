@@ -5,4 +5,4 @@ export * from './icon';
 export * from './menu';
 export * from './table';
 export * from './product';
-export * from './sort';
+export * from './filter';
