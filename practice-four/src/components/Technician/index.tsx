@@ -10,7 +10,7 @@ const Technician = () => (
       </Text>
       &amp; send the magic link to technicians
     </Text>
-    <Image src='technician.png' alt='Technicians' />
+    <Image src='technician.png' alt='Technicians' m='auto' />
   </Box>
 );
 

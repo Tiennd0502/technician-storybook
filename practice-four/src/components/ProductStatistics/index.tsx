@@ -17,7 +17,9 @@ const ProductStatistics = () => (
       </Heading>
       <Text variant='text3Xl'>350</Text>
     </Flex>
-    <Image src='total-product.png' alt='Total product' />
+    <Flex justifyContent='center' alignItems='center' width='100%'>
+      <Image src='total-product.png' alt='Total product' maxW='min-content' />
+    </Flex>
     <Flex justifyContent='space-between'>
       <Button variant='outline'>
         <CircleIcon color='background.component.quaternary' mr='2.5' />
