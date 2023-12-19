@@ -1,5 +1,6 @@
 import { Flex, Heading, Image, Text, Button } from '@chakra-ui/react';
-import { CircleIcon } from '..';
+import { StatusLabel } from '..';
+import { STATUS } from '@/interfaces';
 
 const ProductStatistics = () => (
   <Flex
@@ -22,12 +23,10 @@ const ProductStatistics = () => (
     </Flex>
     <Flex justifyContent='space-between'>
       <Button variant='outline'>
-        <CircleIcon color='background.component.quaternary' mr='2.5' />
-        Activated
+        <StatusLabel value={STATUS.Activated} />
       </Button>
       <Button variant='outline'>
-        <CircleIcon color='secondary.500' mr='2.5' />
-        Deactivated
+        <StatusLabel value={STATUS.Deactivated} />
       </Button>
     </Flex>
   </Flex>

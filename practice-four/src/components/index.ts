@@ -16,3 +16,4 @@ export { default as Input } from './Input';
 export { default as ProductForm } from './ProductForm';
 export { default as ConfirmModal } from './ConfirmModal';
 export { default as SearchBox } from './SearchBox';
+export { default as StatusLabel } from './StatusLabel';

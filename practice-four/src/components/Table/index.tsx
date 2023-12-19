@@ -32,7 +32,7 @@ const Table = ({
   const [isLargeScreen] = useMediaQuery('(min-width: 768px)');
 
   return (
-    <Box p='7' borderWidth='1px' borderRadius='md' borderColor='primary'>
+    <Box p='7' borderWidth='1px' borderRadius='md' borderColor='primary' h='100%'>
       <Flex justifyContent='space-between' mb='7' alignItems='center'>
         <Heading variant='headingLg' mr='auto'>
           {title}

@@ -1,8 +1,8 @@
 import { render } from '@testing-library/react';
 import * as mediaQueryHooks from '@chakra-ui/react';
 
-import { PRODUCT_HEADER_COLUMNS, DEFAULT_PRODUCT_FILTER } from '@/constants';
-import { PRODUCTS } from '@/__mocks__';
+import { DEFAULT_PRODUCT_FILTER } from '@/constants';
+import { PRODUCTS, PRODUCT_HEADER_COLUMNS } from '@/__mocks__';
 
 import Table from '..';
 

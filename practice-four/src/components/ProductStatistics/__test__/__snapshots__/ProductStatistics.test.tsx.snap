@@ -36,20 +36,38 @@ exports[`ProductStatistics test cases should render correctly 1`] = `
         type="button"
       >
         <div
-          class="chakra-icon css-1c49pbn"
-          focusable="false"
-        />
-        Activated
+          class="css-70qvj9"
+        >
+          <div
+            class="chakra-icon css-19b2uvg"
+            focusable="false"
+          />
+          <p
+            class="chakra-text css-0"
+            data-testid="status-value"
+          >
+            Activated
+          </p>
+        </div>
       </button>
       <button
         class="chakra-button css-4xx2wk"
         type="button"
       >
         <div
-          class="chakra-icon css-s12z8y"
-          focusable="false"
-        />
-        Deactivated
+          class="css-70qvj9"
+        >
+          <div
+            class="chakra-icon css-crig9m"
+            focusable="false"
+          />
+          <p
+            class="chakra-text css-0"
+            data-testid="status-value"
+          >
+            Deactivated
+          </p>
+        </div>
       </button>
     </div>
   </div>

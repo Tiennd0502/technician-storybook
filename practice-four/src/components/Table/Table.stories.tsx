@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import Table from '.';
-import { PRODUCTS } from '@/__mocks__';
-import { PRODUCT_HEADER_COLUMNS, DEFAULT_PRODUCT_FILTER } from '@/constants';
+import { PRODUCTS, PRODUCT_HEADER_COLUMNS } from '@/__mocks__';
+import { DEFAULT_PRODUCT_FILTER } from '@/constants';
 
 const meta: Meta<typeof Table> = {
   title: 'Components/Table',
