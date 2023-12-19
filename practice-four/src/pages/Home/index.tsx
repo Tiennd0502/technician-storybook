@@ -1,5 +1,5 @@
 import { useCallback, useMemo, useState } from 'react';
-import { Flex, Box, Heading, Text, useDisclosure } from '@chakra-ui/react';
+import { Flex, Box, Heading, useDisclosure } from '@chakra-ui/react';
 
 // Constants
 import { SERVICES, CATEGORIES } from '@/__mocks__';
@@ -17,7 +17,7 @@ import {
   ProductForm,
   Technician,
   ConfirmModal,
-  CircleIcon,
+  StatusLabel,
 } from '@/components';
 
 // Hooks
@@ -99,18 +99,9 @@ const Home = () => {
   }, []);
 
   const productHeaderColumn = useMemo(() => {
-    const customViewStatus = (value: string | number | boolean) =>
-      value.toString() === STATUS.Activated.toString() ? (
-        <Flex alignItems='center'>
-          <CircleIcon color='background.component.quaternary' mr='1' />
-          <Text variant='textSm'>Activated</Text>
-        </Flex>
-      ) : (
-        <Flex alignItems='center'>
-          <CircleIcon color='secondary.500' mr='1' />
-          <Text variant='textSm'>Deactivated</Text>
-        </Flex>
-      );
+    const customViewStatus = (value: string | number | boolean) => (
+      <StatusLabel value={value as STATUS} />
+    );
 
     return [
       {

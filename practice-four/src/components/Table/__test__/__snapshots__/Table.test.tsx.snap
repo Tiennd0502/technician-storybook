@@ -3,7 +3,7 @@
 exports[`Table test cases should render correctly 1`] = `
 <div>
   <div
-    class="css-dolgjh"
+    class="css-151fgvf"
   >
     <div
       class="css-de1gzo"
@@ -187,11 +187,12 @@ exports[`Table test cases should render correctly 1`] = `
               class="css-70qvj9"
             >
               <div
-                class="chakra-icon css-17eg008"
+                class="chakra-icon css-19b2uvg"
                 focusable="false"
               />
               <p
                 class="chakra-text css-0"
+                data-testid="status-value"
               >
                 Activated
               </p>
@@ -264,11 +265,12 @@ exports[`Table test cases should render correctly 1`] = `
               class="css-70qvj9"
             >
               <div
-                class="chakra-icon css-1kgxeio"
+                class="chakra-icon css-crig9m"
                 focusable="false"
               />
               <p
                 class="chakra-text css-0"
+                data-testid="status-value"
               >
                 Deactivated
               </p>
@@ -341,11 +343,12 @@ exports[`Table test cases should render correctly 1`] = `
               class="css-70qvj9"
             >
               <div
-                class="chakra-icon css-17eg008"
+                class="chakra-icon css-19b2uvg"
                 focusable="false"
               />
               <p
                 class="chakra-text css-0"
+                data-testid="status-value"
               >
                 Activated
               </p>
@@ -418,11 +421,12 @@ exports[`Table test cases should render correctly 1`] = `
               class="css-70qvj9"
             >
               <div
-                class="chakra-icon css-17eg008"
+                class="chakra-icon css-19b2uvg"
                 focusable="false"
               />
               <p
                 class="chakra-text css-0"
+                data-testid="status-value"
               >
                 Activated
               </p>
